@@ -1,0 +1,5 @@
+1. VSC
+2. node js
+3. bun 
+4. npm i -g typescript
+5. bun index.ts
