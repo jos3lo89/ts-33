@@ -18,7 +18,7 @@ email después de que se haya creado:
 const joselo: Person = { name: "joselo", age: 23, email: "joselo@example.com" };
 console.log(joselo.email); // "joselo@example.com"
 // Esto dará un error en tiempo de compilación:
-joselo.email = "new-email@example.com"; // ERROR
+joselo.email = "joselo@example.com"; // ERROR
 ```
 
 En este ejemplo, el objeto joselo incluye una propiedad de correo electrónico de solo lectura que se establece en "joselo@example.com" cuando se
