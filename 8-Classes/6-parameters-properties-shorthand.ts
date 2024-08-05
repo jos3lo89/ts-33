@@ -15,5 +15,5 @@ class Player5 {
 }
 
 const dog5 = new Player5("jose", "lo", 10);
-console.log(dog1.first);
-console.log(dog1.last);
+console.log(dog5.first);
+console.log(dog5.last);

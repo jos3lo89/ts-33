@@ -1,62 +1,63 @@
 // --------------------------------------------------
-class MyClass {
-    private _myProperty: number = 0;
+class Myclass {
+  private _myProperty: number = 0;
 
-    get myProperty(): number {
-      return this._myProperty;
-    }
-
-    set myProperty(value: number) {
-      if (value < 0) {
-        throw new Error("Value cannot be negative");
-      }
-      this._myProperty = value;
-    }
+  get myProperty(): number {
+    return this._myProperty;
   }
 
-  // Create an instance of MyClass
-  const myInstance = new MyClass();
+  set myProperty(value: number) {
+    if (value < 0) {
+      throw new Error("Value cannot be negative");
+    }
 
-  // Use the getter
-  console.log("Current value:", myInstance.myProperty);
+    this._myProperty = value;
+  }
+}
 
-  // Use the setter
-  myInstance.myProperty = 42;
-  console.log("New value:", myInstance.myProperty);
+// creando una instancia
+const myInstace = new Myclass();
 
-  // Attempt to set a negative value (will throw an error)
-  // myInstance.myProperty = -10;
+// usando Getter
+console.log(`Current value: ${myInstace.myProperty}`);
 
-  // --------------------------------------------------
+// usando Setter
+myInstace.myProperty = 33;
+console.log(`New Value: ${myInstace.myProperty}`);
 
-  // --------------------------------------------------
-  // class Player {
-  //   constructor(
-  //     public first: string,
-  //     public last: string,
-  //     private _score: number
-  //   ) {}
+// Intento de establecer un valor negativo (arrojará un error)
+myInstace.myProperty = -33;
 
-  //   private secretMethod(): void {
-  //     console.log("Secret Method");
-  //   }
+// --------------------------------------------------
 
-  //   get fullName() {
-  //     return `${this.first} ${this.last}`;
-  //   }
+// --------------------------------------------------
+// class Player {
+//   constructor(
+//     public first: string,
+//     public last: string,
+//     private _score: number
+//   ) {}
 
-  //   get score(): number {
-  //     return this._score;
-  //   }
+//   private secretMethod(): void {
+//     console.log("Secret Method");
+//   }
 
-  //   set score(newScore: number) {
-  //     if (newScore < 0) {
-  //       throw new Error("Score cannot be negative");
-  //     }
-  //     this._score = newScore;
-  //   }
-  // }
+//   get fullName() {
+//     return `${this.first} ${this.last}`;
+//   }
 
-  // const dog1 = new Player("Elton", "Steele", 10);
-  // console.log(dog1.score);
-  // --------------------------------------------------
+//   get score(): number {
+//     return this._score;
+//   }
+
+//   set score(newScore: number) {
+//     if (newScore < 0) {
+//       throw new Error("Score cannot be negative");
+//     }
+//     this._score = newScore;
+//   }
+// }
+
+// const dog1 = new Player("Elton", "Steele", 10);
+// console.log(dog1.score);
+// --------------------------------------------------
