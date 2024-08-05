@@ -1,5 +1,8 @@
 let password: string | number = 33;
 
+password = "wadafa"
+
+
 type UserInfo1 = {
   first: string;
   last: string;
@@ -21,3 +24,6 @@ console.log(user3);
 
 const items5: (number | string)[] = [1, 2, "Hola"];
 console.log(items5);
+
+
+
